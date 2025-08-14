@@ -1,0 +1,6 @@
+{
+  "ProjectType": "Process",
+  "Name": "GetLatestPressReleases",
+  "Description": null,
+  "MainFile": "Main.xaml"
+}

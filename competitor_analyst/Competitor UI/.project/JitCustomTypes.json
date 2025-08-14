@@ -1,0 +1,74 @@
+{
+  "version": "3.0.0.0",
+  "bundleHash": "Nzm9oEHTFOP5xG9JW44OXYPRBJ1VmQmNIDT3NeYAQ",
+  "discardedAssemblyNames": [
+    "Apps.form.CompetitorInputPagePage.Expressions.fB8wv1fizvC1RLOe71rqlmA1",
+    "Apps.form.CompetitorInputPagePage.g94VZjRfb3Qg",
+    "Apps.form.CompetitorInputPagePage.Expressions.2P5394VL2CN1igA6O15QQuQ1",
+    "Apps.form.CompetitorInputPagePage.Expressions.VcQoU1ESsJB1LJ1ph1jQXVj2",
+    "Apps.form.CompetitorInputPagePage.g5n6jRfb3Qg",
+    "Apps.form.CompetitorInputPagePage.Expressions.JAWIRRevEQ14LrnM12KBUn3",
+    "Apps.form.CompetitorInputPagePage.gf590lhfb3Qg",
+    "Apps.form.CompetitorInputPagePage.Expressions.CoicjJxvPL1B5LdE4bPuG33",
+    "Apps.form.CompetitorInputPagePage.Expressions.cRUVx3e6lQQ1nL1sL2Jrf0g4",
+    "Apps.form.CompetitorInputPagePage.gPAzZsxfb3Qg",
+    "Apps.form.CompetitorInputPagePage.Expressions.UHkLE4s6VYF1X4ARP3sBVgU3",
+    "Apps.form.CompetitorInputPagePage.gxObeBBjb3Qg"
+  ],
+  "discardedAssemblyReplacements": {
+    "Apps.form.CompetitorInputPagePage.Expressions.fB8wv1fizvC1RLOe71rqlmA1": "Apps.form.CompetitorInputPagePage.Expressions.2P5394VL2CN1igA6O15QQuQ1",
+    "Apps.form.CompetitorInputPagePage.g94VZjRfb3Qg": "Apps.form.CompetitorInputPagePage.g5n6jRfb3Qg",
+    "Apps.form.CompetitorInputPagePage.Expressions.2P5394VL2CN1igA6O15QQuQ1": "Apps.form.CompetitorInputPagePage.Expressions.VcQoU1ESsJB1LJ1ph1jQXVj2",
+    "Apps.form.CompetitorInputPagePage.Expressions.VcQoU1ESsJB1LJ1ph1jQXVj2": "Apps.form.CompetitorInputPagePage.Expressions.JAWIRRevEQ14LrnM12KBUn3",
+    "Apps.form.CompetitorInputPagePage.g5n6jRfb3Qg": "Apps.form.CompetitorInputPagePage.gf590lhfb3Qg",
+    "Apps.form.CompetitorInputPagePage.Expressions.JAWIRRevEQ14LrnM12KBUn3": "Apps.form.CompetitorInputPagePage.Expressions.CoicjJxvPL1B5LdE4bPuG33",
+    "Apps.form.CompetitorInputPagePage.gf590lhfb3Qg": "Apps.form.CompetitorInputPagePage.gPAzZsxfb3Qg",
+    "Apps.form.CompetitorInputPagePage.Expressions.CoicjJxvPL1B5LdE4bPuG33": "Apps.form.CompetitorInputPagePage.Expressions.cRUVx3e6lQQ1nL1sL2Jrf0g4",
+    "Apps.form.CompetitorInputPagePage.Expressions.cRUVx3e6lQQ1nL1sL2Jrf0g4": "Apps.form.CompetitorInputPagePage.Expressions.UHkLE4s6VYF1X4ARP3sBVgU3",
+    "Apps.form.CompetitorInputPagePage.gPAzZsxfb3Qg": "Apps.form.CompetitorInputPagePage.gxObeBBjb3Qg",
+    "Apps.form.CompetitorInputPagePage.Expressions.UHkLE4s6VYF1X4ARP3sBVgU3": "Apps.form.CompetitorInputPagePage.Expressions.NOaOUe250M1Td29V465Tr72",
+    "Apps.form.CompetitorInputPagePage.gxObeBBjb3Qg": "Apps.form.CompetitorInputPagePage.gq27HLxzb3Qg"
+  },
+  "assembliesJitInfo": {
+    "Apps.form.CompetitorInputPagePage.g5n6jRfb3Qg": {
+      "createdAt": "2025-08-14T09:47:16.60866+00:00",
+      "providerName": "Apps",
+      "rootNamespace": "\u003Cundefined\u003E",
+      "typeNames": [
+        "Controls.CompetitorInputPagePage"
+      ]
+    },
+    "Apps.form.CompetitorInputPagePage.gf590lhfb3Qg": {
+      "createdAt": "2025-08-14T09:47:31.1679367+00:00",
+      "providerName": "Apps",
+      "rootNamespace": "\u003Cundefined\u003E",
+      "typeNames": [
+        "Controls.CompetitorInputPagePage"
+      ]
+    },
+    "Apps.form.CompetitorInputPagePage.gPAzZsxfb3Qg": {
+      "createdAt": "2025-08-14T09:48:20.4665117+00:00",
+      "providerName": "Apps",
+      "rootNamespace": "\u003Cundefined\u003E",
+      "typeNames": [
+        "Controls.CompetitorInputPagePage"
+      ]
+    },
+    "Apps.form.CompetitorInputPagePage.gxObeBBjb3Qg": {
+      "createdAt": "2025-08-14T09:50:36.6597911+00:00",
+      "providerName": "Apps",
+      "rootNamespace": "\u003Cundefined\u003E",
+      "typeNames": [
+        "Controls.CompetitorInputPagePage"
+      ]
+    },
+    "Apps.form.CompetitorInputPagePage.gq27HLxzb3Qg": {
+      "createdAt": "2025-08-14T10:20:26.7934085+00:00",
+      "providerName": "Apps",
+      "rootNamespace": "\u003Cundefined\u003E",
+      "typeNames": [
+        "Controls.CompetitorInputPagePage"
+      ]
+    }
+  }
+}

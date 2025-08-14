@@ -1,0 +1,1 @@
+{"fileName":"evaluation-set-default.json","id":"b81adfa6-bf75-416a-937f-84ef14436a11","name":"Default Evaluation Set","batchSize":10,"timeoutMinutes":20,"evaluatorRefs":["52db49a0-9fc9-4dfe-9352-0bc5009e6d99"],"evaluations":[],"modelSettings":[],"createdAt":"2025-08-13T09:02:21.640Z","updatedAt":"2025-08-13T09:02:21.640Z","category":1}

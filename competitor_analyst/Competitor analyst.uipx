@@ -1,0 +1,22 @@
+{
+  "DocVersion": "1.0.0",
+  "StudioMinVersion": "2025.04.0",
+  "SolutionId": "6c31fcbe-769f-45fd-e003-08ddda3c08d0",
+  "Projects": [
+    {
+      "Type": "Agent",
+      "ProjectRelativePath": "Research Updates/project.uiproj",
+      "Id": "128b800f-d831-4fca-ba40-42625f023eef"
+    },
+    {
+      "Type": "Process",
+      "ProjectRelativePath": "GetLatestPressReleases/project.uiproj",
+      "Id": "4c388c53-946b-466b-aaca-819d2b5a60b5"
+    },
+    {
+      "Type": "WebApp",
+      "ProjectRelativePath": "Competitor UI/project.uiproj",
+      "Id": "e438754b-a46a-4798-bad7-002bb2dd6cda"
+    }
+  ]
+}

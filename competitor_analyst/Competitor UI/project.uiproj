@@ -1,0 +1,9 @@
+{
+  "ProjectType": "WebApp",
+  "WebAppSettings": {
+    "AppId": "IDfcb0e9d358ba4be7aaa2f44a4b4b5e71"
+  },
+  "Name": "Competitor UI",
+  "Description": null,
+  "MainFile": "Main.xaml"
+}
