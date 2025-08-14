@@ -1,0 +1,145 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" this:Main.idea_details="[new Newtonsoft.Json.Linq.JObject From {  }]"
+ xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities"
+ xmlns:isactr="http://schemas.uipath.com/workflow/integration-service-activities/isactr"
+ xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+ xmlns:njl="clr-namespace:Newtonsoft.Json.Linq;assembly=Newtonsoft.Json"
+ xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib"
+ xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation"
+ xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation"
+ xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib"
+ xmlns:this="clr-namespace:"
+ xmlns:ui="http://schemas.uipath.com/workflow/activities"
+ xmlns:uiascb="clr-namespace:UiPath.IntegrationService.Activities.SWEntities.CBF47E975BA_generateEmbeddings_Create.Bundle;assembly=CBF47E975BA_generate.ptpv147S0xP1emnTklSGc82"
+ xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <x:Members>
+    <x:Property Name="idea_details" Type="InArgument(njl:JObject)" />
+    <x:Property Name="embeddings" Type="OutArgument(s:Double[])" />
+  </x:Members>
+  <TextExpression.NamespacesForImplementation>
+    <scg:List x:TypeArguments="x:String" Capacity="36">
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>UiPath.IntegrationService.Activities.Runtime.Models.FilterBuilder</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.IntegrationService.Activities.Runtime.Models</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>UiPath.IntegrationService.Activities.Runtime.Helpers.TypeDetailsCustomization</x:String>
+      <x:String>UiPath.IntegrationService.Activities.Runtime.Activities</x:String>
+      <x:String>UiPath.Platform.Activities</x:String>
+      <x:String>Newtonsoft.Json</x:String>
+      <x:String>Newtonsoft.Json.Linq</x:String>
+      <x:String>UiPath.IntegrationService.Activities.SWEntities.CBF47E975BA_generateEmbeddings_Create.Bundle</x:String>
+      <x:String>System.Collections.Specialized</x:String>
+    </scg:List>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="64">
+      <AssemblyReference>CBF47E975BA_generate.ptpv147S0xP1emnTklSGc82</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>UiPath.IntegrationService.Activities.Runtime</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>Newtonsoft.Json</AssemblyReference>
+    </scg:List>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="1023,583.6566666666666" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ui:ManualTrigger Result="{x:Null}" DisplayName="Manual Trigger" sap2010:WorkflowViewState.IdRef="ManualTrigger_1" />
+    <isactr:ConnectorActivity Configuration="H4sIAAAAAAAAA51WbW8aRxD+K6v70A8RdwVsY8eSVQF2Glq70OAkqiLLWu4G2LLsXvYFQiz/987s3eEjYDuq/cG+2dmZ2WeeeXmI3gmQme1r5bhQYKLzh2gM3KRzPpFQHEbnX+4a0UDl3m0FD9FffAnRebTUGchBFjWiS2FzyTel/IbkJAWbGpE7oRVKb+fAwg3mNJsBOuQOGCwnkGVCzSxeuN3kdN86gwL8Hmvjhiaj0FqN6Frrhc8pyuHkX0hd6U0K67pSBqf2N56LeAXGos+Lh9rH4y8pz/lESOE2FztOC7OfuPTbN6F0xN0cP3992fpSKG/vrZipn3RDMROGpZ+7x4AS3qdnXWue9TaXMOVeuujcGQ8YiLaiRHBkxJKbTYSXQjK6KR0UKSn+LwHsS0wj+vzgJRTHH2AarpSYHQod9Qc23IQsOp9yaYEkn7VZTKVeX33LDdigWB0OVWX2Y55hMquQK2nANLz2Db4Uf+noqxfBQaEa9K51yssn/u0BH0h+b8DNdTbiBiN2xAC68NjYkk8QJ/eoN6iku9SDb46FC2yqTUU+TEyNfgkjgiqPAsP0tFR3egHKshU3AizLIAdF2kwrtp5zVxJ6oz1D2Ji3eJa8TOR2PeOHk/saSD2dkd4Wihor9wDpjgasdrZXkbVzqktvIUDk5sIynQeYtCJs8HuqJRLB4iGwf/AnvrmJLy9Jf8ndy68+It+B11WhtZvto7jVjJutGIm1ErCOnkFmDKlWWZ34BwgzVH2uVtxWmL1OIHyq2YPrYyncwanLvBJfPTCRgXJiKpAhBqgc6BPZgPk3DJkRk80SrLWQks1B5qz73SM3hkid7gAJo4RDgLnKkE4O2xjjE7z2CmuO/w82gSc/QkNVOPTuYEN/qoYvb+72sLmqt7NdhAZYXhbfhFVTsIHohGAhm7ZAFUKsLKKPhSVH7FK2BK5CQU0ZZ7mAFIIKFmzCrng6f6rQ4AG5mhJ8qINNqajhXAvlysq1DWY93nJUnOQow/7NFVqdgFsDIMnXulb1GHBQK83anKMqOkq1MSCxp2WYSDd/itdi45TYDdxmx2LoFltr2oiZUFzulUYR5F5q3xVq51GmPY7eqGgBYN221X4Am2Orr7XY4rvvaYo+2ymKRO9z4KkK/hDuvhrGuwneyX3fAE3rFyjw9MiPgoZnMlAOZkX/GINZiRQSGlIrpC7YZPz5CvEM//Z7745Pr96envS6B0K5L1wnPa8yCcmzCg12yE6Su3zVOj4dN7+NWrBUtws5/j09azfYp3KMt5Im/eJ1bE5YqBcKvDNcNtgIcyHSP2FzS0PgQnkpfyIzP5kC6lCIfdCuCvORNq2Crtu2Zangy1jRWogWjeHSpgJlMTzqZSJHyOOlSI22eupiTj0H+7fiArVL3DfVelCSprG7SB2kwXvn8qKT0ozS+PBH2mVSLsV3yCrDFUuqqBgvDyhUrGLIaltWeFK1O1L3oT8RlXy8LcyYZzxuNttPROxr6Zdh2XlOFRvbOLTOopx+vBftkfoZOyERRdQ9g/MOzMDBkqJGeTmmEfZyNx7xdMFnUE9Rq5M0Y+wOPMEhd9I8a7WSTj1n1ZpcZWtnQtQVd4weJ+32NmWvV+frqR1W431rYS/fw/FtbRc+aGWM+JIRrAOcgimEZB4dp51petaKz06yTnw86RzF/PSsGbebrZPOyaTzttk5oZ2Yq5lH8Gj00HryntseBrJA0/05nhFVyjKjFa4ndboIsD/+B57EP++9DAAA" ConnectionId="6ed4957b-480b-41cd-9e79-54bf47e975ba" DisplayName="Connector activity" sap:VirtualizedContainerService.HintSize="450,57" sap2010:WorkflowViewState.IdRef="ConnectorActivity_1" UiPathActivityTypeId="969f36e7-51b1-390a-8769-50966d414e79">
+      <isactr:ConnectorActivity.FieldObjects>
+        <isactr:FieldObject Name="modelId" Type="FieldArgument">
+          <isactr:FieldObject.Value>
+            <InArgument x:TypeArguments="x:String">text-embedding-ada-002</InArgument>
+          </isactr:FieldObject.Value>
+        </isactr:FieldObject>
+        <isactr:FieldObject Name="input" Type="FieldArgument">
+          <isactr:FieldObject.Value>
+            <InArgument x:TypeArguments="x:String">[String.Join(Environment.NewLine + Environment.NewLine, New String() {If(idea_details("summary") IsNot Nothing, idea_details("summary").ToString(), ""), If(idea_details("description") IsNot Nothing, idea_details("description").ToString(), "")})]</InArgument>
+          </isactr:FieldObject.Value>
+        </isactr:FieldObject>
+        <isactr:FieldObject Name="apiminus_signversion" Type="FieldArgument">
+          <isactr:FieldObject.Value>
+            <InArgument x:TypeArguments="x:String">2023-10-01-preview</InArgument>
+          </isactr:FieldObject.Value>
+        </isactr:FieldObject>
+        <isactr:FieldObject Name="user" Type="FieldArgument" />
+        <isactr:FieldObject Name="out_embeddings_array" Type="FieldArgument">
+          <isactr:FieldObject.Value>
+            <OutArgument x:TypeArguments="s:Double[]">[embeddings]</OutArgument>
+          </isactr:FieldObject.Value>
+        </isactr:FieldObject>
+        <isactr:FieldObject Name="Jit_generateEmbeddings" Type="FieldArgument">
+          <isactr:FieldObject.Value>
+            <OutArgument x:TypeArguments="uiascb:generateEmbeddings_Create" />
+          </isactr:FieldObject.Value>
+        </isactr:FieldObject>
+      </isactr:ConnectorActivity.FieldObjects>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </isactr:ConnectorActivity>
+    <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="450,48" sap2010:WorkflowViewState.IdRef="WriteLine_1">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </WriteLine>
+  </Sequence>
+</Activity>

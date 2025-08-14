@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bpmn:definitions xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:uipath="http://uipath.org/schema/bpmn" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" xmlns:di="http://www.omg.org/spec/DD/20100524/DI" id="sample-diagram" targetNamespace="http://www.omg.org/spec/BPMN/20100524/MODEL" exporter="UiPath Studio Web (https://uipath.com)" exporterVersion="77fba169">
+  <bpmn:process id="Process_1" isExecutable="false">
+    <bpmn:extensionElements>
+      <uipath:variables version="v1">
+        <uipath:inputOutput id="vLozeghV4" name="Error" type="jsonSchema" elementId="Activity_tYb4t2"><![CDATA[{"type":"object","properties":{"code":{"type":"string"},"message":{"type":"string"},"detail":{"type":"string"},"category":{"type":"string"},"status":{"type":"number"}}}]]></uipath:inputOutput>
+        <uipath:inputOutput id="v7C6jK76F" name="idea_details" type="jsonSchema" elementId="Activity_tYb4t2"><![CDATA[{"type":"array","items":{"$ref":"#/$defs/jToken"},"$defs":{"jToken":{"type":"array","items":{"$ref":"#/$defs/jToken"}}},"$schema":"http://json-schema.org/draft-07/schema#"}]]></uipath:inputOutput>
+        <uipath:inputOutput id="vB6BrSne7" name="Error" type="jsonSchema" elementId="Activity_AEyR1W"><![CDATA[{"type":"object","properties":{"code":{"type":"string"},"message":{"type":"string"},"detail":{"type":"string"},"category":{"type":"string"},"status":{"type":"number"}}}]]></uipath:inputOutput>
+        <uipath:inputOutput id="vqzqNovzt" name="embeddings" type="jsonSchema" subType="number" elementId="Activity_AEyR1W"><![CDATA[{"type":"array","items":{"type":"number","minimum":-1.7976931348623157e+308,"maximum":1.7976931348623157e+308},"$schema":"http://json-schema.org/draft-07/schema#"}]]></uipath:inputOutput>
+        <uipath:inputOutput id="vBDAwwiCY" name="Error" type="jsonSchema" elementId="Activity_mBLq5c"><![CDATA[{"type":"object","properties":{"code":{"type":"string"},"message":{"type":"string"},"detail":{"type":"string"},"category":{"type":"string"},"status":{"type":"number"}}}]]></uipath:inputOutput>
+        <uipath:inputOutput id="veBvfPdrv" name="ids" type="jsonSchema" subType="string" elementId="Activity_mBLq5c"><![CDATA[{"type":"array","items":{"type":"string"},"$schema":"http://json-schema.org/draft-07/schema#"}]]></uipath:inputOutput>
+        <uipath:inputOutput id="vjUeQqLGv" name="scores" type="jsonSchema" subType="number" elementId="Activity_mBLq5c"><![CDATA[{"type":"array","items":{"type":"number","minimum":-1.7976931348623157e+308,"maximum":1.7976931348623157e+308},"$schema":"http://json-schema.org/draft-07/schema#"}]]></uipath:inputOutput>
+        <uipath:inputOutput id="vnK3RdN04" name="queryEmbeddings" type="jsonSchema" elementId="Activity_mBLq5c"><![CDATA[{"type":"object","properties":{"matches":{"type":"array","items":{"type":"object","properties":{"metadata":{"type":"object","properties":{"text":{"type":"string"}}},"score":{"$ref":"#/$defs/nullableOfDouble"},"values":{"$ref":"#/$defs/listOfNullableOfDoubleListOfNullableOfDouble"},"id":{"type":"string"}}}},"matchesMetadata":{"type":"array","items":{"type":"object","properties":{"text":{"type":"string"}}}},"_namespace":{"type":"string"},"matchesIDs":{"type":"array","items":{"type":"string"}},"matchesScores":{"$ref":"#/$defs/listOfNullableOfDoubleListOfNullableOfDouble"}},"$defs":{"nullableOfDouble":{"type":"number","minimum":-1.7976931348623157e+308,"maximum":1.7976931348623157e+308},"listOfNullableOfDoubleListOfNullableOfDouble":{"type":"array","items":{"$ref":"#/$defs/nullableOfDouble"}}},"$schema":"http://json-schema.org/draft-07/schema#"}]]></uipath:inputOutput>
+      </uipath:variables>
+      <uipath:bindings version="v1">
+        <uipath:binding id="bc0M1DCJP" name="folderPath" type="string" default="Solution Folder" resource="process" resourceKey="Solution Folder.Feed Ideas Into Pinecone" propertyAttribute="folderPath" />
+        <uipath:binding id="bSjKiak4t" name="name" type="string" default="Feed Ideas Into Pinecone" resource="process" resourceKey="Solution Folder.Feed Ideas Into Pinecone" propertyAttribute="name" />
+        <uipath:binding id="bCGkWOUTD" name="folderPath" type="string" default="Solution Folder" resource="process" resourceKey="Solution Folder.Get Insight Details" propertyAttribute="folderPath" />
+        <uipath:binding id="buzBZ1WJD" name="name" type="string" default="Get Insight Details" resource="process" resourceKey="Solution Folder.Get Insight Details" propertyAttribute="name" />
+        <uipath:binding id="bFRQwsk0N" name="folderPath" type="string" default="Solution Folder" resource="process" resourceKey="Solution Folder.Create Insight Embedding" propertyAttribute="folderPath" />
+        <uipath:binding id="b2pZIvj8x" name="name" type="string" default="Create Insight Embedding" resource="process" resourceKey="Solution Folder.Create Insight Embedding" propertyAttribute="name" />
+        <uipath:binding id="bddbmxKE9" name="folderPath" type="string" default="Solution Folder" resource="process" resourceKey="Solution Folder.Query Pinecone1" propertyAttribute="folderPath" />
+        <uipath:binding id="b7x6C7M9F" name="name" type="string" default="Query Pinecone1" resource="process" resourceKey="Solution Folder.Query Pinecone1" propertyAttribute="name" />
+      </uipath:bindings>
+    </bpmn:extensionElements>
+    <bpmn:startEvent id="Event_start" name="Start event">
+      <bpmn:extensionElements>
+        <uipath:entryPointId value="89a4d08e-23df-492e-a0cf-852fe121cdbc" />
+      </bpmn:extensionElements>
+      <bpmn:outgoing>edge_zv1hSZ</bpmn:outgoing>
+    </bpmn:startEvent>
+    <bpmn:serviceTask id="Activity_tYb4t2" name="Get Insight Details">
+      <bpmn:extensionElements>
+        <uipath:activity version="v1">
+          <uipath:type value="Orchestrator.StartJob" version="v2" />
+          <uipath:context>
+            <uipath:input name="name" type="string" value="=bindings.buzBZ1WJD" />
+            <uipath:input name="folderPath" type="string" value="=bindings.bCGkWOUTD" />
+            <uipath:input name="_label" type="string" value="Get Insight Details" />
+            <uipath:inputSchema type="jsonSchema"><![CDATA[{"$schema":"http://json-schema.org/draft-07/schema#","type":"object","properties":{"idea_id":{"type":"string"}},"required":[]}]]></uipath:inputSchema>
+          </uipath:context>
+          <uipath:input name="JobArguments" type="json" target="bodyField"><![CDATA[{"idea_id":"STUDPD-5975"}]]></uipath:input>
+          <uipath:output name="Error" type="jsonSchema" source="=Error" var="vLozeghV4" />
+          <uipath:output name="idea_details" type="jsonSchema" source="=idea_details" var="v7C6jK76F" />
+        </uipath:activity>
+      </bpmn:extensionElements>
+      <bpmn:incoming>edge_zv1hSZ</bpmn:incoming>
+      <bpmn:outgoing>edge_wUEZ36</bpmn:outgoing>
+    </bpmn:serviceTask>
+    <bpmn:serviceTask id="Activity_AEyR1W" name="Create Insight Embedding">
+      <bpmn:extensionElements>
+        <uipath:activity version="v1">
+          <uipath:type value="Orchestrator.StartJob" version="v2" />
+          <uipath:context>
+            <uipath:input name="name" type="string" value="=bindings.b2pZIvj8x" />
+            <uipath:input name="folderPath" type="string" value="=bindings.bFRQwsk0N" />
+            <uipath:input name="_label" type="string" value="Create Insight Embedding" />
+            <uipath:inputSchema type="jsonSchema"><![CDATA[{"$schema":"http://json-schema.org/draft-07/schema#","type":"object","properties":{"idea_details":{"type":"array"}},"required":[]}]]></uipath:inputSchema>
+          </uipath:context>
+          <uipath:input name="JobArguments" type="json" target="bodyField"><![CDATA[{"idea_details":"=vars.v7C6jK76F"}]]></uipath:input>
+          <uipath:output name="Error" type="jsonSchema" source="=Error" var="vB6BrSne7" />
+          <uipath:output name="embeddings" type="jsonSchema" subType="number" source="=embeddings" var="vqzqNovzt" />
+        </uipath:activity>
+      </bpmn:extensionElements>
+      <bpmn:incoming>edge_wUEZ36</bpmn:incoming>
+      <bpmn:outgoing>edge_R6AKeQ</bpmn:outgoing>
+    </bpmn:serviceTask>
+    <bpmn:serviceTask id="Activity_mBLq5c" name="Query Pinecone1">
+      <bpmn:extensionElements>
+        <uipath:activity version="v1">
+          <uipath:type value="Orchestrator.StartJob" version="v2" />
+          <uipath:context>
+            <uipath:input name="name" type="string" value="=bindings.b7x6C7M9F" />
+            <uipath:input name="folderPath" type="string" value="=bindings.bddbmxKE9" />
+            <uipath:input name="_label" type="string" value="Query Pinecone1" />
+            <uipath:inputSchema type="jsonSchema"><![CDATA[{"$schema":"http://json-schema.org/draft-07/schema#","type":"object","properties":{"embeddings":{"type":"array"}},"required":[]}]]></uipath:inputSchema>
+          </uipath:context>
+          <uipath:input name="JobArguments" type="json" target="bodyField"><![CDATA[{"embeddings":"=vars.vqzqNovzt"}]]></uipath:input>
+          <uipath:output name="Error" type="jsonSchema" source="=Error" var="vBDAwwiCY" />
+          <uipath:output name="ids" type="jsonSchema" subType="string" source="=ids" var="veBvfPdrv" />
+          <uipath:output name="scores" type="jsonSchema" subType="number" source="=scores" var="vjUeQqLGv" />
+          <uipath:output name="queryEmbeddings" type="jsonSchema" source="=queryEmbeddings" var="vnK3RdN04" />
+        </uipath:activity>
+      </bpmn:extensionElements>
+      <bpmn:incoming>edge_R6AKeQ</bpmn:incoming>
+      <bpmn:outgoing>edge_o6L9t9</bpmn:outgoing>
+    </bpmn:serviceTask>
+    <bpmn:endEvent id="Event_hVGQSQ">
+      <bpmn:incoming>edge_o6L9t9</bpmn:incoming>
+    </bpmn:endEvent>
+    <bpmn:sequenceFlow id="edge_zv1hSZ" sourceRef="Event_start" targetRef="Activity_tYb4t2" />
+    <bpmn:sequenceFlow id="edge_wUEZ36" sourceRef="Activity_tYb4t2" targetRef="Activity_AEyR1W" />
+    <bpmn:sequenceFlow id="edge_R6AKeQ" sourceRef="Activity_AEyR1W" targetRef="Activity_mBLq5c" />
+    <bpmn:sequenceFlow id="edge_o6L9t9" sourceRef="Activity_mBLq5c" targetRef="Event_hVGQSQ" />
+  </bpmn:process>
+  <bpmndi:BPMNDiagram id="BPMNDiagram_1">
+    <bpmndi:BPMNPlane id="BPMNPlane_1" bpmnElement="Process_1">
+      <bpmndi:BPMNShape id="S_Event_start" bpmnElement="Event_start">
+        <dc:Bounds x="260" y="200" width="36" height="36" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="260" y="241" width="36" height="14" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="S_Activity_tYb4t2" bpmnElement="Activity_tYb4t2">
+        <dc:Bounds x="401.44964599609375" y="178" width="100" height="80" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="401.44964599609375" y="263" width="100" height="14" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="S_Activity_AEyR1W" bpmnElement="Activity_AEyR1W">
+        <dc:Bounds x="401.44964599609375" y="365.46006774902344" width="100" height="80" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="401.44964599609375" y="450.46006774902344" width="100" height="14" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="S_Activity_mBLq5c" bpmnElement="Activity_mBLq5c">
+        <dc:Bounds x="401.44964599609375" y="549.4600677490234" width="100" height="80" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="401.44964599609375" y="634.4600677490234" width="100" height="14" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="S_Event_hVGQSQ" bpmnElement="Event_hVGQSQ">
+        <dc:Bounds x="610.454833984375" y="571.4600677490234" width="36" height="36" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="610.454833984375" y="612.4600677490234" width="36" height="14" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge id="BPMNEdge_edge_zv1hSZ" bpmnElement="edge_zv1hSZ">
+        <di:waypoint x="296" y="218" />
+        <di:waypoint x="401" y="218" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="BPMNEdge_edge_wUEZ36" bpmnElement="edge_wUEZ36">
+        <di:waypoint x="451" y="258" />
+        <di:waypoint x="451" y="365" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="BPMNEdge_edge_R6AKeQ" bpmnElement="edge_R6AKeQ">
+        <di:waypoint x="451" y="445" />
+        <di:waypoint x="451" y="549" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="BPMNEdge_edge_o6L9t9" bpmnElement="edge_o6L9t9">
+        <di:waypoint x="501" y="589" />
+        <di:waypoint x="620" y="589" />
+        <di:waypoint x="620" y="609" />
+        <di:waypoint x="666.454833984375" y="609" />
+        <di:waypoint x="666.454833984375" y="589" />
+        <di:waypoint x="646" y="589" />
+      </bpmndi:BPMNEdge>
+    </bpmndi:BPMNPlane>
+  </bpmndi:BPMNDiagram>
+</bpmn:definitions>

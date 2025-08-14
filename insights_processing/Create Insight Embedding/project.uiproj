@@ -1,0 +1,6 @@
+{
+  "ProjectType": "Process",
+  "Name": "Create Insight Embedding",
+  "Description": "Blank Process",
+  "MainFile": "Main.xaml"
+}

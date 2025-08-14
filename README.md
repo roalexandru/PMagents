@@ -5,10 +5,10 @@ This is **not** an official UiPath repository — for sample and demonstration p
 
 ## Implemented Agents
 
-- **Jira Product Discovery – Insights Processor** — processes discovery items and surfaces insights.
-- **Generate Emails from User Voice Feedback** — drafts outreach emails based on user feedback.
-- **[Monitor Selected Competitors and Share the Gist](competitor_analyst/README.md)** — tracks competitor activity and summarizes updates.
-- **TIF Analyzer** — reviews TIFs to identify patterns and recommend actions.
+- 🔍 **[Jira Product Discovery – Insights Processor](insights_processing/README.md)** — processes discovery items and surfaces insights.
+- 📧 **Generate Emails from User Voice Feedback** — drafts outreach emails based on user feedback.
+- 🏢 **[Monitor Selected Competitors and Share the Gist](competitor_analyst/README.md)** — tracks competitor activity and summarizes updates.
+- 📋 **TIF Analyzer** — reviews TIFs to identify patterns and recommend actions.
 
 ## In-Progress / Ideas
 

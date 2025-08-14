@@ -1,0 +1,19 @@
+{
+  "version": "3.0.0.0",
+  "bundleHash": "R60ICOyuJNx0JVUfApYblueR30n1UwFIbKf3ocj176Q",
+  "discardedAssemblyNames": [],
+  "discardedAssemblyReplacements": {},
+  "assembliesJitInfo": {
+    "CDE7AA36EFE_Query_Cr.Nwnxzb1ghM1cmPUsg3nAQ1": {
+      "createdAt": "2025-08-11T21:58:20.0236785+00:00",
+      "providerName": "CustomEntities",
+      "rootNamespace": "UiPath.IntegrationService.Activities.SWEntities.CDE7AA36EFE_Query_Create.Bundle",
+      "typeNames": [
+        "metadata",
+        "matches",
+        "matchesMetadata",
+        "Query_Create"
+      ]
+    }
+  }
+}

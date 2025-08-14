@@ -1,0 +1,37 @@
+{
+  "DocVersion": "1.0.0",
+  "StudioMinVersion": "2025.04.0",
+  "SolutionId": "5965d51e-754b-4b5f-59d1-08ddd8d1b033",
+  "Projects": [
+    {
+      "Type": "Process",
+      "ProjectRelativePath": "Query Pinecone/project.uiproj",
+      "Id": "b44b9e15-e5a1-40d3-875d-b545831376e5"
+    },
+    {
+      "Type": "Process",
+      "ProjectRelativePath": "Feed Ideas Into Pinecone/project.uiproj",
+      "Id": "19b16e91-a265-4807-8e1c-0c70f11a277c"
+    },
+    {
+      "Type": "Process",
+      "ProjectRelativePath": "Get Insight Details/project.uiproj",
+      "Id": "b52db276-fc21-4cf9-ab6f-22f20de7c731"
+    },
+    {
+      "Type": "Agent",
+      "ProjectRelativePath": "Agent/project.uiproj",
+      "Id": "2b68c216-858a-41ad-926a-2575a5a9ecf7"
+    },
+    {
+      "Type": "ProcessOrchestration",
+      "ProjectRelativePath": "Agentic Process/project.uiproj",
+      "Id": "56a2d37c-6512-4f5b-95f8-5c2e5f330b27"
+    },
+    {
+      "Type": "Process",
+      "ProjectRelativePath": "Create Insight Embedding/project.uiproj",
+      "Id": "51383879-62b5-4139-9852-223eb7964e19"
+    }
+  ]
+}

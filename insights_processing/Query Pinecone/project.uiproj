@@ -1,0 +1,6 @@
+{
+  "ProjectType": "Process",
+  "Name": "Query Pinecone",
+  "Description": "Blank Process",
+  "MainFile": "Main.xaml"
+}

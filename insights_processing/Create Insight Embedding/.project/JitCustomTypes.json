@@ -1,0 +1,18 @@
+{
+  "version": "3.0.0.0",
+  "bundleHash": "dtFOuOTkViyYnn5IdynKMbpW8Kl86zOJneTdVIz0gKs",
+  "discardedAssemblyNames": [],
+  "discardedAssemblyReplacements": {},
+  "assembliesJitInfo": {
+    "CBF47E975BA_generate.ptpv147S0xP1emnTklSGc82": {
+      "createdAt": "2025-08-11T21:43:03.6784107+00:00",
+      "providerName": "CustomEntities",
+      "rootNamespace": "UiPath.IntegrationService.Activities.SWEntities.CBF47E975BA_generateEmbeddings_Create.Bundle",
+      "typeNames": [
+        "usage",
+        "data",
+        "generateEmbeddings_Create"
+      ]
+    }
+  }
+}

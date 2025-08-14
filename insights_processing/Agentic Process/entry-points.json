@@ -1,0 +1,1 @@
+{"$schema":"https://cloud.uipath.com/draft/2024-12/entry-point","$id":"entry-points.json","entryPoints":[{"filePath":"/content/Process.bpmn#Event_start","uniqueId":"89a4d08e-23df-492e-a0cf-852fe121cdbc","type":"processorchestration","input":{"type":"object","properties":{}},"output":{"type":"object","properties":{}}}]}

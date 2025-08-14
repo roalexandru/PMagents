@@ -1,0 +1,6 @@
+{
+  "ProjectType": "Process",
+  "Name": "Get Insight Details",
+  "Description": "Blank Process",
+  "MainFile": "Get Idea Details.xaml"
+}

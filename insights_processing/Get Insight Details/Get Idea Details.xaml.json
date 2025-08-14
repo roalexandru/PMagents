@@ -1,0 +1,33 @@
+{
+  "DisplayName": "Get Idea Details",
+  "Tooltip": null,
+  "HelpLink": null,
+  "Color": null,
+  "OriginalIconFileName": null,
+  "Arguments": [
+    {
+      "Name": "idea_details",
+      "DisplayName": "idea_details",
+      "Category": null,
+      "Tooltip": null,
+      "Placeholder": null,
+      "Widget": null,
+      "IsRequired": false,
+      "IsPrincipal": true,
+      "ArgumentType": 0,
+      "DataSourceItems": null
+    },
+    {
+      "Name": "idea_id",
+      "DisplayName": "idea_id",
+      "Category": null,
+      "Tooltip": null,
+      "Placeholder": "STUDPD-8894",
+      "Widget": null,
+      "IsRequired": false,
+      "IsPrincipal": true,
+      "ArgumentType": 0,
+      "DataSourceItems": null
+    }
+  ]
+}

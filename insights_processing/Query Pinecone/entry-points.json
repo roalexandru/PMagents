@@ -1,0 +1,123 @@
+{
+  "$schema": "https://cloud.uipath.com/draft/2024-12/entry-point",
+  "$id": "entry-points.json",
+  "entryPoints": [
+    {
+      "filePath": "Main.xaml",
+      "uniqueId": "8d6a14bf-c3d0-4b1a-8f89-45d0638ad473",
+      "type": "Process",
+      "input": {
+        "type": "object",
+        "properties": {
+          "embeddings": {
+            "type": "array",
+            "items": {
+              "type": "number",
+              "minimum": -1.7976931348623157E+308,
+              "maximum": 1.7976931348623157E+308
+            }
+          }
+        },
+        "required": []
+      },
+      "output": {
+        "type": "object",
+        "properties": {
+          "ids": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "scores": {
+            "type": "array",
+            "items": {
+              "type": "number",
+              "minimum": -1.7976931348623157E+308,
+              "maximum": 1.7976931348623157E+308
+            }
+          },
+          "queryEmbeddings": {
+            "type": "object",
+            "properties": {
+              "matches": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "metadata": {
+                      "type": "object",
+                      "properties": {
+                        "text": {
+                          "type": "string"
+                        }
+                      }
+                    },
+                    "score": {
+                      "$ref": "#/$defs/nullableOfDouble"
+                    },
+                    "values": {
+                      "$ref": "#/$defs/listOfNullableOfDoubleListOfNullableOfDouble"
+                    },
+                    "id": {
+                      "type": "string"
+                    }
+                  }
+                }
+              },
+              "matchesMetadata": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "text": {
+                      "type": "string"
+                    }
+                  }
+                }
+              },
+              "_namespace": {
+                "type": "string"
+              },
+              "matchesIDs": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "matchesScores": {
+                "$ref": "#/$defs/listOfNullableOfDoubleListOfNullableOfDouble"
+              }
+            },
+            "$defs": {
+              "nullableOfDouble": {
+                "type": "number",
+                "minimum": -1.7976931348623157E+308,
+                "maximum": 1.7976931348623157E+308
+              },
+              "listOfNullableOfDoubleListOfNullableOfDouble": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/$defs/nullableOfDouble"
+                }
+              }
+            }
+          }
+        },
+        "$defs": {
+          "nullableOfDouble": {
+            "type": "number",
+            "minimum": -1.7976931348623157E+308,
+            "maximum": 1.7976931348623157E+308
+          },
+          "listOfNullableOfDoubleListOfNullableOfDouble": {
+            "type": "array",
+            "items": {
+              "$ref": "#/$defs/nullableOfDouble"
+            }
+          }
+        }
+      }
+    }
+  ]
+}
